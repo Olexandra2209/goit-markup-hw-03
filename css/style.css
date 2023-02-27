@@ -34,7 +34,6 @@ body {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid tomato;
 }
 .list {
   list-style: none;
@@ -58,6 +57,9 @@ body {
 .menu-link {
   display: flex;
 }
+.header-container {
+  display: flex;
+}
 .logo {
   color: var(--primary-brand);
   font-family: Raleway, sans-serif;
@@ -67,6 +69,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .decor {
   color: var(--title-text-color);
@@ -79,11 +82,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
+}
+.site-nav {
+  display: flex;
 }
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
   text-decoration: none;
+  margin-right: 40px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -93,6 +101,9 @@ body {
   color: var(--hover-color);
 }
 .address {
+  margin-left: auto;
+}
+.address-nav {
   display: flex;
 }
 .address-nav .mail,
@@ -101,6 +112,7 @@ body {
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
+  margin-right: 40px;
 }
 .address-nav :hover,
 .address-nav :focus {
@@ -108,6 +120,8 @@ body {
 }
 .hero {
   background-color: var(--title-text-color);
+  padding-bottom: 112px;
+  padding-top: 180px;
 }
 .hero-title {
   color: var(--white-color);
@@ -137,6 +151,12 @@ body {
   color: var(--white-color);
   background: var(--hover-color);
 }
+.section {
+  padding: 120px 0;
+}
+.action-container {
+  padding-top: 112px;
+}
 .action:not(:last-child) {
   margin-right: 24px;
 }
@@ -144,26 +164,35 @@ body {
   display: flex;
   margin-right: 24px;
 }
-.text {
-}
-.section {
-  padding: 120px 0;
-}
 .section-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
-.images > .section-images {
-  margin-top: 72px;
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
 }
-.images > .section-images:not(:last-child) {
-  margin-right: 24px;
+.section-images {
+  flex-basis: calc((100% - 48px) / 3);
 }
 .images {
   display: flex;
   margin-right: 24px;
+}
+.team-images {
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.name {
+  background-color: var(--white-color);
+  padding: 32px 16px;
+  text-align: center;
 }
 .title,
 .team-title {
@@ -171,34 +200,32 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
+  margin-bottom: 72px;
 }
 .team {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   padding: 120px 0;
 }
-.team-members > .section-images {
-  margin-top: 72px;
-}
-.team-members > .section-images:not(:last-child) {
-  margin-right: 24px;
-}
 .team-members {
   display: flex;
-  background-color: var(--white-color);
-}
-.section-images > .name {
-  margin: 32px 16px;
 }
 .member {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
+}
+.footer-container {
+  width: 264px;
+  margin-left: 156px;
 }
 .footer {
   background-color: var(--title-text-color);
-  padding: 100px 156px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   color: var(--primary-brand);
@@ -224,6 +251,18 @@ body {
   color: var(--accent-color);
   margin-top: 16px;
 }
+.menu {
+  padding-bottom: 120px;
+  padding-top: 96px;
+}
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 .button {
   background-color: var(--background-color);
   color: var(--primary-brand);
@@ -232,6 +271,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
@@ -253,4 +295,19 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+.photo-card {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.photo-name {
+  padding: 32px 0;
+  display: block;
+  border: 1px solid #e7e9fc;
+}
+.photo-title {
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+.photo-text {
+  padding-left: 16px;
 }
