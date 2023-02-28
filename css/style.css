@@ -161,12 +161,13 @@ body {
 .action-container {
   padding-top: 112px;
 }
-.action:not(:last-child) {
-  margin-right: 24px;
+.action {
+  width: 264px;
 }
+
 .actions {
   display: flex;
-  margin-right: 24px;
+  gap: 24px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -223,8 +224,6 @@ body {
   margin-bottom: 8px;
 }
 .footer-container {
-  width: 264px;
-  margin-left: 156px;
 }
 .footer {
   background-color: var(--title-text-color);
@@ -254,6 +253,7 @@ body {
 .footer-text {
   color: var(--accent-color);
   margin-top: 16px;
+  width: 264px;
 }
 .menu {
   padding-bottom: 120px;
@@ -301,6 +301,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+.photo {
+  column-gap: 24px;
+  row-gap: 48px;
+}
 .photo-card {
   flex-basis: calc((100% - 48px) / 3);
 }
@@ -308,6 +312,7 @@ body {
   padding: 32px 0;
   display: block;
   border: 1px solid #e7e9fc;
+  border-top-width: 0;
 }
 .photo-title {
   margin-bottom: 8px;
